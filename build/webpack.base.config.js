@@ -5,21 +5,17 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
-  entry: {
-    app: './src/index.ts',
-  },
   /**
    * 构建后输出规则
   */
   output: {
-     path: path.join(__dirname, '../', 'dist'), // 输出路径
-     filename: '[name].[chunkhash:8].js', // 输出的文件名
+    filename: 'employee-query.js' // 库名
   },
   /**
    * 解析文件规则
   */
   resolve: {
-    extensions: ['.vue', '.js', '.ts'],
+    extensions: ['.ts', '.js', '.vue'],
     alias: {
       vue$: 'vue/dist/vue.esm.js',
       '@': path.resolve(__dirname, '..', 'src')

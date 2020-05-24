@@ -1,3 +1,11 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-  devtool: 'cheap-module-eval-source-map'
+  entry: './src/index.ts',
+  devtool: 'cheap-module-eval-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    })
+  ]
 }
