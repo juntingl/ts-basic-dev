@@ -5,7 +5,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/index.tsx',
+    app: './src/index.ts',
   },
   /**
    * 构建后输出规则
@@ -18,7 +18,7 @@ module.exports = {
    * 解析文件规则
   */
   resolve: {
-    extensions: ['.js', '.ts', '.tsx']
+    extensions: ['.js', '.ts']
   },
   /**
    * 使用相关 module 解析各种语言
@@ -26,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: [
           {
             loader: 'ts-loader',
