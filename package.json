@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-query-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "查询组件",
   "main": "./dist/employee-query.js",
   "scripts": {
