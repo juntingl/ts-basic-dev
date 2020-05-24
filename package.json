@@ -1,5 +1,5 @@
 {
-  "name": "vue-query-component",
+  "name": "vue-simple-query-component",
   "version": "1.0.0",
   "description": "查询组件",
   "main": "index.js",
