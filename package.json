@@ -2,7 +2,7 @@
   "name": "vue-simple-query-component",
   "version": "1.0.0",
   "description": "查询组件",
-  "main": "index.js",
+  "main": "./dist/employee-query.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
     "build": "webpack --mode=production --config ./build/webpack.config.js",
