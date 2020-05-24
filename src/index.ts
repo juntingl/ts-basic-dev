@@ -1,13 +1,13 @@
 import Vue from 'vue';
 // import Hello from '@/components/Hello.vue';
-import EmployeeQuery from 'vue-simple-query-component';
+import QueryComponent from 'vue-simple-query-component';
 
 new Vue({
   el: '.app',
   // template: `<h1>Hello {{name}}</h1>`,
   // render: h => h(Hello)
   components: {
-    EmployeeQuery
+    QueryComponent
   },
   template: `<query-component @query="getParam" :department="department" />`,
   data: {
