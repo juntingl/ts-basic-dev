@@ -1,7 +1,7 @@
 {
-  "name": "knowledge",
+  "name": "vue-query-component",
   "version": "1.0.0",
-  "description": "",
+  "description": "查询组件",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
